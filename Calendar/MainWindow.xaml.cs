@@ -440,8 +440,16 @@ namespace Calendar
 
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            if(ApiKeys.ApiKey != "") { 
-            await LoadTemperature(City);
+            if(ApiKeys.ApiKey != "")
+            {
+                try
+                { 
+                    await LoadTemperature(City);
+                }
+                catch (Exception myException)
+                {
+                    MessageBox.Show(myException.Message + "  Incorrect Api Key");
+                }
             }
             else
             {
