@@ -4,7 +4,7 @@ Simple todo application using wpf technology with ORM, database supported in Ent
 
 To Compile: 
 
-You have to make class APIKeysLocal.cs in the folder named Calendar. The body of this class should look like this: 
+You have to make class file APIKeysLocal.cs next to file ApiKeys.cs . The body of this class should look like this: 
 
 ```
 using System;
