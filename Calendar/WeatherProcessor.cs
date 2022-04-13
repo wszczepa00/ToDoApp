@@ -13,8 +13,6 @@ namespace Calendar
     {
 
 
-
-
         public static async Task<WeatherInfo.root> LoadWeather(string City)
         {
             string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}", City, ApiKeys.ApiKey);

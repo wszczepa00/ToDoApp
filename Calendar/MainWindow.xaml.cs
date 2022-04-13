@@ -440,7 +440,13 @@ namespace Calendar
 
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            if(ApiKeys.ApiKey != "") { 
             await LoadTemperature(City);
+            }
+            else
+            {
+                WeatherTemperature.Text = "You have to pass your API Key in APIKeysLocal.cs file";
+            }
         }
 
         private async void btnChangeCity_Click(object sender, RoutedEventArgs e)
