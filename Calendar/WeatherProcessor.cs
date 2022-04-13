@@ -12,12 +12,12 @@ namespace Calendar
     class WeatherProcessor
     {
 
-        
+
 
 
         public static async Task<WeatherInfo.root> LoadWeather(string City)
         {
-            string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}", City, ApiKey);
+            string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}", City, ApiKeys.ApiKey);
 
             using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
             {

@@ -73,6 +73,8 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Compile Include="ApiHelper.cs" />
+    <Compile Include="ApiKeys.cs" />
+    <Compile Include="APIKeysLocal.cs" />
     <Compile Include="CalendarContext.cs" />
     <Compile Include="Day.cs" />
     <Compile Include="Error.xaml.cs">
