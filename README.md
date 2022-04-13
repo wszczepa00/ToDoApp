@@ -1,6 +1,6 @@
 # ToDoApp
 
-Simple todo application using wpf technology with ORM, database supported in Entity Framework technology and communication with an external api for checking weather in given cities.
+Simple todo application using wpf technology with ORM database supported in Entity Framework technology and communication with an external api for checking weather in given cities.
 
 To Compile: 
 
